@@ -6,9 +6,15 @@
 <title>A3 Paper Layout with Textareas</title>
 <link rel="stylesheet" href="style.css">
 <script src="storage.js"></script>
+<script src="zoom.js"></script>
 </head>
 <body>
-
+  <div class="buttons">
+    <button id="saveButton" onclick="return saveToUrl();">Save content in URL</button>
+    <button id="fitToWidthButton" onclick="return fitToWidth();">Fit to screen width</button>
+    <button id="fitToWidthButton" onclick="return fitToHeight();">Fit to screen height</button>
+    <button id="fitToA3Button" onclick="return fitToA3();">Fit to A3 size</button>
+  </div>
 <div class="a3-paper">
   <div class="a3-header">
     <div class="a3-owner" contenteditable="true">Date/Owner: XXX</div>
@@ -132,6 +138,5 @@
     </div>
   </div>
 </div>
-<button id="saveButton" onclick="return saveToUrl();">Save content in URL</button>
 </body>
 </html>

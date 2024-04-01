@@ -13,15 +13,20 @@ body {
     /* Set margins and orientation */
     margin-left: auto;
     margin-right: auto;
+
   }
-  #saveButton {
+  .buttons {
     display: none; /* hides the button in print */
   }
 }
 
 @media screen {
+  body {
+    /* transform: scale(0.8); /* To display the A3 within the typical screen width */
+    /* transform-origin: 0 0; /* Adjust as needed */
+  }
   /* This style applies when displaying on screen */
-  #saveButton {
+  .buttons {
     display: block; /* ensures the button is visible on screen */
   }
 }
@@ -46,8 +51,8 @@ body {
   padding: 4mm; /* Padding inside the div for better layout */
 }
 .a3-steps {
-  width: 412mm; /* 420-2x4 */
-  height: 283mm; /* 297-4-6-4 = 283 */
+  /* width: 412mm; /* 420-2x4 */
+  /* height: 283mm; /* 297-4-6-4 = 283 */
   margin: 0 auto; /* Center the div on the page */
   column-count: 2; /* Create two columns */
   column-gap: 4mm; /* Gap between columns */
