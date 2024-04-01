@@ -14,7 +14,16 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  #saveButton {
+    display: none; /* hides the button in print */
+  }
 }
+
+/* This style applies when displaying on screen */
+#saveButton {
+  display: block; /* ensures the button is visible on screen */
+}
+
 .a3-header {
   font-size: 6mm;
   padding-bottom: 4mm;
