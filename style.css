@@ -19,9 +19,11 @@ body {
   }
 }
 
-/* This style applies when displaying on screen */
-#saveButton {
-  display: block; /* ensures the button is visible on screen */
+@media screen {
+  /* This style applies when displaying on screen */
+  #saveButton {
+    display: block; /* ensures the button is visible on screen */
+  }
 }
 
 .a3-header {
