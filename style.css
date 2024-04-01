@@ -1,0 +1,66 @@
+body {
+  width: 420mm; /* A3 width in landscape */
+  height: 297mm; /* A3 height in landscape */
+  /* Set margins and orientation */
+  margin-left: auto;
+  margin-right: auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media print {
+  body {
+    width: 420mm; /* A3 width in landscape */
+    height: 297mm; /* A3 height in landscape */
+    /* Set margins and orientation */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.a3-header {
+  font-size: 6mm;
+  padding-bottom: 4mm;
+  font-weight: bold;
+}
+.a3-owner {
+  float: right;
+}
+.a3-paper {
+  width: 420mm; /* A3 width in landscape */
+  height: 297mm; /* A3 height in landscape */
+  margin: 0 auto; /* Center the div on the page */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #000; /* Border to visualize the printable area */
+  overflow: hidden; /* Prevents overflow of content outside the div */
+  padding: 4mm; /* Padding inside the div for better layout */
+}
+.a3-steps {
+  width: 412mm; /* 420-2x4 */
+  height: 283mm; /* 297-4-6-4 = 283 */
+  margin: 0 auto; /* Center the div on the page */
+  column-count: 2; /* Create two columns */
+  column-gap: 4mm; /* Gap between columns */
+  overflow: hidden; /* Prevents overflow of content outside the div */
+}
+
+.a3-step {
+    border: 1px solid #ccc; /* Border to visualize the editable area */
+    overflow: auto; /* Allow internal scrolling if needed */
+    margin-bottom: 4mm;
+}
+.editable-content {
+  padding: 4mm;
+}
+/* Additional styles for body to ensure no margin/padding around the .a3-paper div */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.a3-step-title {
+  border: 1px solid #ccc;
+  padding: 2mm;
+  font-size: 4mm;
+  font-weight: bold;
+  background-color: #C3D5EC;
+}
