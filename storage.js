@@ -42,6 +42,21 @@ function loadFromUrl() {
     loadB64Content(b64content);
 }
 
+function getA3Content() {
+    let a3content = {};
+    a3content['a3-owner'] = document.getElementById('a3-owner').innerHTML;
+    a3content['a3-title'] = document.getElementById('a3-title').innerHTML;
+    a3content['a3-step-1'] = document.getElementById('a3-step-1').innerHTML;
+    a3content['a3-step-2'] = document.getElementById('a3-step-2').innerHTML;
+    a3content['a3-step-3'] = document.getElementById('a3-step-3').innerHTML;
+    a3content['a3-step-4'] = document.getElementById('a3-step-4').innerHTML;
+    a3content['a3-step-5'] = document.getElementById('a3-step-5').innerHTML;
+    a3content['a3-step-6'] = document.getElementById('a3-step-6').innerHTML;
+    a3content['a3-step-7'] = document.getElementById('a3-step-7').innerHTML;
+    return a3content;
+}
+
+
 // Load content from URL when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     // DOM is fully parsed

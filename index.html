@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A3 Paper Layout with Textareas</title>
-<link rel="stylesheet" href="style.css">
-<script src="storage.js"></script>
-<script src="zoom.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A3 Paper Layout with Textareas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="storage.js"></script>
+  <script src="zoom.js"></script>
 </head>
+
 <body>
   <div class="buttons">
     <button id="saveButton" onclick="return saveToUrl();">Save content in URL</button>
@@ -15,128 +17,219 @@
     <button id="fitToWidthButton" onclick="return fitToHeight();">Fit to screen height</button>
     <button id="fitToA3Button" onclick="return fitToA3();">Fit to A3 size</button>
   </div>
-<div class="a3-paper">
-  <div class="a3-header">
-    <div class="a3-owner" contenteditable="true">Date/Owner: XXX</div>
-    <div class="a3-title" contenteditable="true">Title: What you are talking about?</div>
-  </div>
-  <div class="a3-steps">
-    <div class="a3-step">
+  <div class="a3-paper">
+    <div class="a3-header">
+      <div class="a3-owner" contenteditable="true" id="a3-owner">Date/Owner: XXX</div>
+      <div class="a3-title" contenteditable="true" id="a3-title">Title: What you are talking about?</div>
+    </div>
+    <div class="a3-steps">
+      <div class="a3-step">
         <div class="a3-step-title">I. Background</div>
-        <div class="editable-content" contenteditable="true">
+        <div class="editable-content" contenteditable="true" id="a3-step-1">
           Why you are talking about it?
           <br />
           <br />
           <br />
           <br />
-          <br /> 
+          <br />
         </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">II. Current conditions</div>
-      <div class="editable-content" contenteditable="true">
-        Where do things stand today?
-        <ul>
-          <li>Show visually using charts, graphs, drawings, maps, etc.</li>
-        </ul>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />  
       </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">III. Goals/Targets</div>
-      <div class="editable-content" contenteditable="true">
-        What specific outcomes are required?
+      <div class="a3-step">
+        <div class="a3-step-title">II. Current conditions</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-2">
+          Where do things stand today?
+          <ul>
+            <li>Show visually using charts, graphs, drawings, maps, etc.</li>
+          </ul>
           <br />
           <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">IV. Analysis</div>
-      <div class="editable-content" contenteditable="true">
-        What is the root cause(s) of the problem?
-        <ul>
-          <li>Choose the simplest problem-analysis tool that clearly shows the cause-and-effect relationship</li>
-        </ul>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <div class="a3-step">
+        <div class="a3-step-title">III. Goals/Targets</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-3">
+          What specific outcomes are required?
+          <br />
+          <br />
+        </div>
       </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">V. Proposed Countermeasures</div>
-      <div class="editable-content" contenteditable="true">
-        What is your proposal to reach the future state, the target condition?
-        <br />
-        <br />
-        How will your recommended countermeasures affect the root-cause to achieve the target? 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />  
+      <div class="a3-step">
+        <div class="a3-step-title">IV. Analysis</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-4">
+          What is the root cause(s) of the problem?
+          <ul>
+            <li>Choose the simplest problem-analysis tool that clearly shows the cause-and-effect relationship</li>
+          </ul>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">VI. Plan</div>
-      <div class="editable-content" contenteditable="true">
-        What activities will be required for implementation and who will be responsible for what and when?
-        <br />
-        <br />
-        What are the indicators of performance or progress?
-        <ul>
-          <li>Incorporate a Gantt chart or similar diagram that shows actions/outcomes, timeline, and responsibilities. May include details on specific means of implementation.</li>
-        </ul>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <div class="a3-step">
+        <div class="a3-step-title">V. Proposed Countermeasures</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-5">
+          What is your proposal to reach the future state, the target condition?
+          <br />
+          <br />
+          How will your recommended countermeasures affect the root-cause to achieve the target?
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </div>
-    </div>
-    <div class="a3-step">
-      <div class="a3-step-title">VII. Follow-up</div>
-      <div class="editable-content" contenteditable="true">
-        What issues can be anticipated?
-        <ul>
-          <li>Ensure ongoing PDCA.</li>
-          <li>Capture and share learning.</li>
-        </ul>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />  
+      <div class="a3-step">
+        <div class="a3-step-title">VI. Plan</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-6">
+          What activities will be required for implementation and who will be responsible for what and when?
+          <br />
+          <br />
+          What are the indicators of performance or progress?
+          <ul>
+            <li>Incorporate a Gantt chart or similar diagram that shows actions/outcomes, timeline, and
+              responsibilities. May include details on specific means of implementation.</li>
+          </ul>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="a3-step">
+        <div class="a3-step-title">VII. Follow-up</div>
+        <div class="editable-content" contenteditable="true" id="a3-step-7">
+          What issues can be anticipated?
+          <ul>
+            <li>Ensure ongoing PDCA.</li>
+            <li>Capture and share learning.</li>
+          </ul>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <div class="webchat" style="position: fixed; bottom: 20px; right: 20px; height: 600px; width: 400px; z-index: 1000;">
+    <iframe id="webchat" style="height: 100%; width: 100%; border: none;" srcdoc='
+      <!doctype html>
+      <html lang="en">
+        <head></head>
+        <body>
+          <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+          <script defer>
+            window.botpress.on("webchat:ready", (conversationId) => {
+              botpress.open();
+            });
+            window.botpress.init({
+              "botId": "dce47b0f-97d7-46f7-82a7-bb7bf500aa9c",
+              "configuration": {
+              "composerPlaceholder": "Ask for help on your A3",
+              "botName": "SandersonAI",
+              "botDescription": "Ken Sanderson is the problem-solving coach in Managing to Learn. SandersonAI is here to help you write a great A3",
+              "website": {},
+              "email": {
+              "title": "fabrice.bernhard@theodo.com",
+              "link": "fabrice.bernhard@theodo.com"
+              },
+              "phone": {},
+              "termsOfService": {},
+              "privacyPolicy": {},
+              "color": "#c3d5ec",
+              "variant": "solid",
+              "themeMode": "light",
+              "fontFamily": "inter",
+              "radius": 1,
+              "allowFileUpload": false
+              },
+              "clientId": "57d5e247-ead3-4066-9881-109cf38aa894",
+              "user": {
+                "data": {
+                  "a3content": top.getA3Content()
+                }
+              }
+            });
+          </script>
+        </body>
+      </html>'></iframe>
+    <script defer>
+      let iframeLoaded = false;
+      let domLoaded = false;
+
+      function updateBotpressUserData() {
+        if (!iframeLoaded || !domLoaded) return;
+
+        if (!webchat.contentWindow.botpress.initialized) {
+          webchat.contentWindow.botpress.on('webchat:opened', (conversationId) => {
+            updateBotpressUserData()
+          });
+          return;
+        }
+        webchat.contentWindow.botpress.updateUser({
+          "data": {
+            "a3content": getA3Content()
+          },
+          "a3content": getA3Content()
+        });
+        webchat.contentWindow.botpress.sendEvent(getA3Content())
+
+      };
+
+      document.addEventListener('DOMContentLoaded', function () {
+        domLoaded = true;
+        updateBotpressUserData();
+      });
+
+      document.getElementById('webchat').addEventListener('load', function () {
+        iframeLoaded = true;
+        updateBotpressUserData();
+      });
+
+      // Listen to any dom element that is contenteditable and send the content to the bot when the user leaves the element
+      const editableDivs = document.querySelectorAll('div[contenteditable="true"]');
+
+      editableDivs.forEach(div => {
+        // Add the innerHTML of the current div to the array
+        div.addEventListener('blur', function () {
+          updateBotpressUserData();
+        });
+      });
+
+    </script>
+  </div>
 </body>
+
 </html>
